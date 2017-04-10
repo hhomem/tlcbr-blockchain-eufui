@@ -28,17 +28,8 @@
             <div class="content">
                 <a href="/"><img class="logo" src="images/TLC-BR%20Banner.png" /> </a>
 				<h1>TLC-BR Half Day Event: Blockchain</h1>
-				<p>IBM Tutoia, 11/Abril/2017, 9:00 - 12:30</p>
-					 <form action="/confirm">
-						<fieldset>
-							<legend>CONFIRME SUA PRESENCA:</legend>
-							Intranet ID:<br>
-							<input type="text" name="intranetID" value=""><br>
-							<input type="submit" value="Submit">
-						</fieldset>
-					</form> 
-				
-			 </div>
+				<p>IBM Tutoia, 11/Abril/2017, 9:00 - 12:30</p>	 
+			</div>
 		</div>
     </div>
 </div>
@@ -47,6 +38,25 @@
 <div class="row2">
     <div class="grid">
         <div class="col-1-2">
+            <div class="content presenca">
+				<form action="/confirm" method="get">
+					<fieldset>
+						<legend>CONFIRME SUA PRESENCA:</legend>
+						Intranet ID:<br>
+						<input type="text" name="intranetID" value=""><br>
+						<input type="submit" value="Submit">
+					</fieldset>
+				</form> 
+			</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Grid 1/3 -->
+<div class="row3">
+    <div class="grid">
+        <div class="col-1-3">
             <div class="content blurb">
             <p>Powered by IBM Bluemix and Node-RED.</p>
 			<p>Node-RED provides a browser-based editor that makes it easy to wire together flows that can be deployed to the runtime in a single-click.</p>
@@ -54,7 +64,7 @@
             <p>More information about Node-RED, including documentation, can be found at <a href="http://nodered.org">nodered.org</a>.</p>
             </div>
         </div>
-        <div class="col-1-2">
+        <div class="col-1-3">
             <div class="content blurb">
                 <p style="text-align: center"><a style="width:350px;" class="button" href="red/">Go to your Node-RED flow editor</a></p>
                 <p style="text-align: center"><a href="#custom">Learn how to customise Node-RED</a></p>
