@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TLC-BR Half Day Event: Blockchain</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+	<link href="css/simplegrid.css" rel="stylesheet" media="screen">
+	<link href="css/style.css" rel="stylesheet" media="screen">
+
+
+</head>
+<body>
+
+<div class="header">
+    <div class="header-content">
+        <a href="/"><img class="logo" src="images/TLC-BR%20Banner.png" /> TLC-BR Half Day Event: Blockchain</a>
+    </div>
+</div>
+<!-- Grid 1 -->
+<div class="title">
+    <div class="grid">
+        <div class="col-1-1">
+            <div class="content">
+                <a href="/"><img class="logo" src="images/TLC-BR%20Banner.png" /> </a>
+				<h1>PRESENCA CONFIRMADA!</h1>
+								
+			 </div>
+		</div>
+    </div>
+</div>
+
+
+<script>
+
+$(function() {
+    $(".insecure").hide();
+    $.ajax({
+        dataType: "json",
+        url: "/red/settings",
+        success: function() {
+            $(".insecure").show();
+        },
+        error: function(jqXHR,textStatus,errorThrown) {}
+    });
+
+});
+</script>
+</body>
+</html>
